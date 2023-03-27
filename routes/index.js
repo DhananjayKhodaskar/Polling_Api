@@ -7,6 +7,9 @@ const questionController = require("../controllers/questionControllers");
 // importing optionsContronller
 const optionsController = require("../controllers/optionControllers");
 
+//importing homecontroller
+const homeController = require("../controllers/homeController");
+
 // initializing router
 const router = express.Router();
 
@@ -28,5 +31,8 @@ router.get("/options/:id/add_vote", optionsController.incrementVotes);
 // adding a route for getting the details of a particular question
 router.get("/questions/:id", questionController.getQuestionDetails);
 
+//adding a route for getting the homepage of api
+router.get('/',homeController.homePage);
+ 
 // exporting router
 module.exports = router;
