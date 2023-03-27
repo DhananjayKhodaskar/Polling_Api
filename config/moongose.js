@@ -1,10 +1,10 @@
+//Using Mongodb Link from dotenv file
+require('dotenv').config()
 // require the library
 const mongoose = require("mongoose");
 
 // connecting to the database
-mongoose.connect(
-  "mongodb+srv://dhanunew:dhanunew@cluster0.s5l5uux.mongodb.net/?retryWrites=true&w=majority"
-);
+mongoose.connect(process.env.DB_URL);
 
 //acquire the connection to check if it is succesfull
 const db = mongoose.connection;
