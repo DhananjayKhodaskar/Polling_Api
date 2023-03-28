@@ -15,7 +15,7 @@ https://dhananjayk-polling-api.onrender.com
 ```bash
   npm install
 ```
-3)Provide `.env` file with DB_URL link inside it.
+3)Provide `.env` file with `DB_URL` link inside it.
 
 4)execute below command to run the server on localhost
 ```bash
